@@ -34,15 +34,15 @@ class App(tk.Tk):
         # Label
         clicked = StringVar()
 
-        acc_name_label = Label(self, text="Account Holder Name").place(x=240, y=30)
-        enter_acc_name = Entry(self).place(x=240, y=60)
-        acc_number = Label(self, text="Account Number").place(x=250, y=90)
-        enter_acc_number = Entry(self).place(x=240, y=120)
+        acc_name_label = Label(self, text="Account Holder Name", bg="#28a00a").place(x=190, y=30)
+        enter_acc_name = Entry(self).place(x=190, y=60)
+        acc_number = Label(self, text="Account Number", bg="#28a00a").place(x=190, y=90)
+        enter_acc_number = Entry(self).place(x=190, y=120)
 
-        bank_menu_label = Label(self, text="Select your Bank").place(x=240, y=150)
-        bank_menu = OptionMenu(self, clicked, "Capitec", "Nedbank", "FNB", "ABSA").place(x=240, y=190)
+        bank_menu_label = Label(self, text="Select your Bank", bg="#28a00a").place(x=190, y=150)
+        bank_menu = OptionMenu(self, clicked, "Capitec", "Nedbank", "FNB", "ABSA").place(x=190, y=190)
 
-        proceed_btn = Button(self, text="Proceed").place(x=240, y=270)
+        proceed_btn = Button(self, text="Proceed").place(x=260, y=190)
 
         self.intro_label = Label(self, text='Convert your Winnings to your currency',
                                  fg='black', relief=tk.RAISED,borderwidth=3)
